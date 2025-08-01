@@ -1,11 +1,13 @@
 # Godot Wrapper
 
-## Enables Steam on Windows to track running time of Godot with opened project
+---
 
-Copilot says:
+С этой штуковиной Steam на Windows видит сколько времени запущен Godot, даже если проект открыт.
+Клади GodotWrapper.exe в steamapps/common, и переименуй их так, чтобы Steam запускал wrapper, а рядом с Wrapper'ом лежал Godot_console.exe
 
 ---
 
+Copilot says:
 A .NET Windows Application that launches `Godot_console.exe` from the current working directory.
 
 ## Features
@@ -25,12 +27,6 @@ A .NET Windows Application that launches `Godot_console.exe` from the current wo
 
    ```powershell
    dotnet publish GodotWrapper.csproj -c Release --self-contained true -r win-x64
-   ```
-
-   Or use the provided batch file:
-
-   ```powershell
-   .\build.bat
    ```
 
 2. Run the wrapper:
